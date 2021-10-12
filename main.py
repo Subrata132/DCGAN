@@ -1,16 +1,8 @@
-from torchvision.transforms import transforms
-from torch.utils.data import DataLoader
-from data_loader import ImageDataset
+from trainer import train
 
 
 def main():
-    transform = transforms.Compose([
-        transforms.ToTensor()
-    ])
-    dataset = ImageDataset(root_dir='./data/', transform=transform)
-    data_loader = DataLoader(dataset,
-                             batch_size=64,
-                             shuffle=True)
+    train()
 
 
 if __name__ == '__main__':
