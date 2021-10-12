@@ -1,0 +1,16 @@
+network_parameter:
+  z_dim: 100
+  disc_feature: 64
+  gen_feature: 64
+  no_channel: 1
+  root_dir: './data/'
+
+training_parameter:
+  epochs: 5
+  batch_size: 1
+  learning_rate: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+
+transform_parameter:
+  image_size: 64
